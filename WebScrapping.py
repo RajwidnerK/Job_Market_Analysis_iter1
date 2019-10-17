@@ -27,8 +27,8 @@ company_name = job_div.find('div').text
 
 job_location = job_location_div.text
 
-# AIzaSyBcdTdMBd-wKj2CbaqWf999zaG4KN4UUAI
-geolocator = Nominatim(user_agent="AIzaSyBcdTdMBd-wKj2CbaqWf999zaG4KN4UUAI")
+
+geolocator = Nominatim(user_agent="Google_key")
 location = geolocator.geocode(job_location)
 lng = location.longitude
 lat = location.latitude
